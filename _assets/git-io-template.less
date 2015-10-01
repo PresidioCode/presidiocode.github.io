@@ -212,7 +212,7 @@ fieldset[disabled] .gio-nav-color .btn-link:focus {
 }
 .gio-repo-description {
   background: @gio-repo-description-bg-color;
-  height: 240px;
+  height: 300px;
   width: 100%;
   padding: 15px;
   margin: 0;
@@ -252,4 +252,29 @@ fieldset[disabled] .gio-nav-color .btn-link:focus {
 }
 .gio-repo-stats a {
   text-decoration: none;
+}
+
+// Fix Field Heights
+@media (max-width: 767px) {
+  .gio-repo-banner {
+    height: 75px;
+  }
+  .gio-repo-description {
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .gio-repo-description {
+    height: 300px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .gio-repo-description {
+    height: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .gio-repo-description {
+    height: 200px;
+  }
 }
