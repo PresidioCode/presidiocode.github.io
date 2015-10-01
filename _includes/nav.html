@@ -1,0 +1,24 @@
+<!-- start navtop.html -->
+<nav class="navbar navbar-fixed-top gio-nav-color">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">{{ site.nav }}</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ site.homepage-url }}"><i class="fa fa-arrow-right fa-lg"></i> {{ site.homepage-name }}</a></li>
+        <li><a href="https://www.twitter.com/{{ site.twitter-name }}"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+        <li><a href="https://www.facebook.com/{{ site.facebook-name }}"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
+        <li><a href="https://plus.google.com/+{{ site.google-name }}"><i class="fa fa-google-plus-square fa-lg"></i> google+</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ site.linkedin-name }}"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end navtop.html -->

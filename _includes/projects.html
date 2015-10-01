@@ -1,0 +1,30 @@
+<!-- start projects.html -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <h2>Projects:</h2>
+    </div>
+{% for repository in site.github.public_repositories %}
+  {% if repository.name == site.github-ignore %}
+    {% continue %}
+  {% else %}
+    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+      <div class="gio-repo">
+        <div onclick="location.href='{{ repository.html_url }}';" class="gio-repo-banner">
+          <p>{{ repository.name }}</p>
+        </div>
+        <div onclick="location.href='{{ repository.html_url }}';" class="gio-repo-description">
+          <p>{{ repository.description }}</p>
+        </div>
+        <div class="gio-repo-stats">
+          <p><a href="{{   repository.html_url }}/stargazers"><i class="fa fa-star"></i> {{ repository.stargazers_count }}</a> | <a href="{{   repository.html_url }}/network"><i class="fa fa-code-fork"></i> {{ repository.forks_count }}</a></p>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+  </div>
+  <hr>
+{% include footer.html %}
+</div>
+<!-- end projects.html -->

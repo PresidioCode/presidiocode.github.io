@@ -1,0 +1,255 @@
+@gio-lgrey:    rgb(200, 200, 200);
+@gio-dgrey:    rgb(50,  50,  50);
+@gio-white:    rgb(255, 255, 255);
+@gio-black:    rgb(0, 0, 0);
+@gio-white-tr: rgba(255, 255, 255, 0.60);
+
+@gio-banner-bg-color: @gio-dgrey;
+@gio-banner-bg-image: url("../images/banner-bg.jpg");
+
+@gio-nav-color-primary: #222222;
+@gio-nav-color-secondary: #080808;
+@gio-nav-color-broder: #101010;
+@gio-nav-color-text-primary: #ffffff;
+@gio-nav-color-text-secondary: #9d9d9d;
+@gio-nav-color-link-active: #333333;
+@gio-nav-color-link-inactive: #444444;
+@gio-nav-color-bg: #ffffff;
+
+@gio-repo-bg-color: @gio-white;
+@gio-repo-border-color: @gio-lgrey;
+@gio-repo-text-color: @gio-white;
+
+@gio-repo-banner-bg-color: @gio-white;
+@gio-repo-banner-bg-image: url("../images/repo.jpg");
+@gio-repo-banner-text-color: @gio-lgrey;
+
+@gio-repo-description-bg-color: @gio-white;
+@gio-repo-description-text-color: @gio-dgrey;
+
+@gio-repo-stats-bg-color: @gio-lgrey;
+@gio-repo-stats-text-color: @gio-dgrey;
+
+/*banner.html*/
+.gio-banner-bg {
+  background-size: cover;
+  overflow: hidden;
+  background: @gio-banner-bg-color;
+  background-image: @gio-banner-bg-image;
+
+}
+.gio-banner-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.gio-banner-box {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 15px;
+  background: @gio-lgrey;
+  background: @gio-white-tr;
+}
+
+/*nav fix*/
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/*nav*/
+.gio-nav-color {
+  background-color: @gio-nav-color-primary;
+  border-color: @gio-nav-color-secondary;
+}
+.gio-nav-color .navbar-brand {
+  color: @gio-nav-color-text-secondary;
+}
+.gio-nav-color .navbar-brand:hover,
+.gio-nav-color .navbar-brand:focus {
+  color: @gio-nav-color-text-primary;
+  background-color: transparent;
+}
+.gio-nav-color .navbar-text {
+  color: @gio-nav-color-text-secondary;
+}
+.gio-nav-color .navbar-nav > li > a {
+  color: @gio-nav-color-text-secondary;
+}
+.gio-nav-color .navbar-nav > li > a:hover,
+.gio-nav-color .navbar-nav > li > a:focus {
+  color: @gio-nav-color-text-primary;
+  background-color: transparent;
+}
+.gio-nav-color .navbar-nav > .active > a,
+.gio-nav-color .navbar-nav > .active > a:hover,
+.gio-nav-color .navbar-nav > .active > a:focus {
+  color: @gio-nav-color-text-primary;
+  background-color: @gio-nav-color-secondary;
+}
+.gio-nav-color .navbar-nav > .disabled > a,
+.gio-nav-color .navbar-nav > .disabled > a:hover,
+.gio-nav-color .navbar-nav > .disabled > a:focus {
+  color: @gio-nav-color-link-inactive;
+  background-color: transparent;
+}
+.gio-nav-color .navbar-toggle {
+  border-color: @gio-nav-color-link-active;
+}
+.gio-nav-color .navbar-toggle:hover,
+.gio-nav-color .navbar-toggle:focus {
+  background-color: @gio-nav-color-link-active;
+}
+.gio-nav-color .navbar-toggle .icon-bar {
+  background-color: @gio-nav-color-text-primary;
+}
+.gio-nav-color .navbar-collapse,
+.gio-nav-color .navbar-form {
+  border-color: @gio-nav-color-broder;
+}
+.gio-nav-color .navbar-nav > .open > a,
+.gio-nav-color .navbar-nav > .open > a:hover,
+.gio-nav-color .navbar-nav > .open > a:focus {
+  background-color: @gio-nav-color-secondary;
+  color: @gio-nav-color-text-primary;
+}
+@media (max-width: 767px) {
+  .gio-nav-color .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: @gio-nav-color-secondary;
+  }
+  .gio-nav-color .navbar-nav .open .dropdown-menu .divider {
+    background-color: @gio-nav-color-secondary;
+  }
+  .gio-nav-color .navbar-nav .open .dropdown-menu > li > a {
+    color: @gio-nav-color-text-secondary;
+  }
+  .gio-nav-color .navbar-nav .open .dropdown-menu > li > a:hover,
+  .gio-nav-color .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: @gio-nav-color-text-primary;
+    background-color: transparent;
+  }
+  .gio-nav-color .navbar-nav .open .dropdown-menu > .active > a,
+  .gio-nav-color .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .gio-nav-color .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: @gio-nav-color-text-primary;
+    background-color: @gio-nav-color-secondary;
+  }
+  .gio-nav-color .navbar-nav .open .dropdown-menu > .disabled > a,
+  .gio-nav-color .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .gio-nav-color .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: @gio-nav-color-link-inactive;
+    background-color: transparent;
+  }
+}
+.gio-nav-color .navbar-link {
+  color: @gio-nav-color-text-secondary;
+}
+.gio-nav-color .navbar-link:hover {
+  color: @gio-nav-color-text-primary;
+}
+.gio-nav-color .btn-link {
+  color: @gio-nav-color-text-secondary;
+}
+.gio-nav-color .btn-link:hover,
+.gio-nav-color .btn-link:focus {
+  color: @gio-nav-color-text-primary;
+}
+.gio-nav-color .btn-link[disabled]:hover,
+fieldset[disabled] .gio-nav-color .btn-link:hover,
+.gio-nav-color .btn-link[disabled]:focus,
+fieldset[disabled] .gio-nav-color .btn-link:focus {
+  color: @gio-nav-color-link-inactive;
+}
+
+/*repo*/
+.gio-repo {
+  background: @gio-repo-bg-color;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  border: 1px solid @gio-repo-border-color;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  color: @gio-repo-text-color;
+}
+.gio-repo-banner {
+  background-size: cover;
+  overflow: hidden;
+  background: @gio-repo-banner-bg-color;
+  background-image: @gio-repo-banner-bg-image;
+  height: 100px;
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  color: @gio-repo-banner-text-color;
+  text-align: center;
+  cursor: pointer;
+}
+.gio-repo-banner > img,
+.gio-repo-banner a > img {
+  color: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  background: inherit;
+  background-size: cover;
+  overflow: hidden;
+}
+.gio-repo-banner p {
+  display: block;
+  color: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: 50%;
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.gio-repo-description {
+  background: @gio-repo-description-bg-color;
+  height: 150px;
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  color: @gio-repo-description-text-color;
+  text-align: left;
+  cursor: pointer;
+}
+.gio-repo-description p {
+  background: @gio-white-tr;
+  display: block;
+  color: inherit;
+  font-size: 14px;
+}
+.gio-repo-stats {
+  background: @gio-repo-stats-bg-color;
+  height: 50px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  color: @gio-repo-stats-text-color;;
+  text-align: left;
+}
+.gio-repo-stats p {
+  display: block;
+  color: inherit;
+  font-size: 14px;
+  position: relative;
+  top: 50%;
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.gio-repo-stats a {
+  text-decoration: none;
+}

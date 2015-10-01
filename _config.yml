@@ -1,0 +1,32 @@
+#html header meta info
+title: Presidio Code
+description: Scripts and tools written for and by the community
+author: Presidio
+
+#template info
+template: presidio-git-io
+
+#siteinfo
+nav: Home
+name: Presidio Code
+tagline: Scripts and tools written for and by the community
+
+#github info
+github-name: PresidioCode
+github-url: https://github.com/PresidioCode
+#url for git.io page
+gitio-url: http://presidiocode.github.io
+#repo to ignore in project list (git.io repo typically)
+github-ignore: presidiocode.github.io
+
+#home page and social links
+homepage-name: Presidio.com
+homepage-url: http://www.presidio.com
+twitter-name: presidio
+facebook-name: PresidioNetworkedSolutions
+google-name: PresidioIT
+linkedin-name: presidio-
+
+#footer text
+footer-text: Powered by Presidio
+footer-url: http://www.presidio.com
